@@ -14,9 +14,9 @@ class MainController extends Controller
         return view('pages.welcome', $data );
 
     }
-    public function saintShow($id)
+    public function saintShow($test)
     {
-        $saint = Saint::find($id);
+        $saint = Saint::find($test);
 
         $data = [
             'saint' => $saint
@@ -28,5 +28,9 @@ class MainController extends Controller
     public function saintDestroy($id)
     {
         
+    }
+    public function saintCreate()
+    {
+
     }
 }

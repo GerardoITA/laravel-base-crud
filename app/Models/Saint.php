@@ -8,7 +8,7 @@ class Saint extends Model
 {
     use HasFactory;
 
-    private $id;
+/*     private $id;
     private $name;
     private $birthplace;
     private $canonization;
@@ -74,5 +74,5 @@ class Saint extends Model
     {
 
         $this->updated_at = $updated_at;
-    }
+    } */
 }

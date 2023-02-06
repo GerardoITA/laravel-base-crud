@@ -13,9 +13,12 @@ use App\Http\Controllers\MainController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', [MainController::class, 'welcome']);
-Route::get('/saint/show/{$id}', [MainController::class, 'saintShow']);
-Route::get('/', [MainController::class, 'welcome']);
-/* Route::get('/', function () {
-    return view('pages.welcome');
-}); */
+Route::get('/', [MainController::class, 'welcome'])
+    -> name('welcome');
+Route::get('/saint/show/{$test}', [MainController::class, 'saintShow'])
+    ->name('saint.show');
+Route::get('/', [MainController::class, 'welcome'])
+    ->name('saint.destroy');
+/* Route::get('/', [MainController::class, 'saintCreate'])
+    ->name('saint.create'); */
+
