@@ -3,6 +3,7 @@
     
    
     <h1>Saints</h1>
+    <h2><a href="/saint/create">Create a new saint</a></h2>
     <ul>
         @foreach ($saints as $saint)
             <li>
