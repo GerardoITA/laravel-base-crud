@@ -7,7 +7,7 @@
         @foreach ($saints as $saint)
             <li>
                 
-                <a href="{{ route('saint.show', ['$test' => $saint -> id]) }}">
+                <a href="/saint/show/{{$saint -> id}}">
                     St. {{ $saint -> name }}
                 </a>
                 -

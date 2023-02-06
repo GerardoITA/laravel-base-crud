@@ -15,7 +15,7 @@ use App\Http\Controllers\MainController;
 */
 Route::get('/', [MainController::class, 'welcome'])
     -> name('welcome');
-Route::get('/saint/show/{$test}', [MainController::class, 'saintShow'])
+Route::get('/saint/show/{id}', [MainController::class, 'saintShow'])
     ->name('saint.show');
 Route::get('/', [MainController::class, 'welcome'])
     ->name('saint.destroy');
