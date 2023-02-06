@@ -6,12 +6,13 @@ use Illuminate\Http\Request;
 use App\Models\Saint;
 class MainController extends Controller
 {
-    public function home() {
-        $saints = Saint::orderBy('created_at', 'DESC')->get();
+    public function welcome() {
+        $saints = Saint::all();
         $data = [
             'saints' => $saints
         ];
-        return view('pages.welcome', $data);
+        return view('pages.welcome', $data );
+
     }
     public function saintShow($id)
     {
