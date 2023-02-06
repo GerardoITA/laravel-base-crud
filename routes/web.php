@@ -14,7 +14,8 @@ use App\Http\Controllers\MainController;
 |
 */
 Route::get('/', [MainController::class, 'welcome']);
-
+Route::get('/saint/show/{$id}', [MainController::class, 'saintShow']);
+Route::get('/', [MainController::class, 'welcome']);
 /* Route::get('/', function () {
     return view('pages.welcome');
 }); */
