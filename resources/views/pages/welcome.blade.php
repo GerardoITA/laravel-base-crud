@@ -11,7 +11,7 @@
                     St. {{ $saint -> name }}
                 </a>
                 -
-                <a href="">
+                <a href="/saint/destroy/{{$saint -> id}}">
                     X
                 </a>
             </li>

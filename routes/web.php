@@ -17,7 +17,7 @@ Route::get('/', [MainController::class, 'welcome'])
     -> name('welcome');
 Route::get('/saint/show/{id}', [MainController::class, 'saintShow'])
     ->name('saint.show');
-Route::get('/', [MainController::class, 'welcome'])
+Route::get('/saint/destroy/{id}', [MainController::class, 'saintDestroy'])
     ->name('saint.destroy');
 /* Route::get('/', [MainController::class, 'saintCreate'])
     ->name('saint.create'); */
